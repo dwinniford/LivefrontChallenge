@@ -57,11 +57,11 @@ export default function Home() {
           </button>
         </div>
       </form>
-      <ul>
+      <div className="row">
         {results.businesses.map((business) => (
           <BusinessCard business={business} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

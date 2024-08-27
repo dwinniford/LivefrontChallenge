@@ -2,6 +2,7 @@ import { Attributes } from "./attributes";
 import { BusinessHours } from "./business-hours";
 import { Category } from "./category";
 import { Coordinates } from "./coordinates";
+import { Location } from "./locations";
 
 export interface Business {
   id: string;
