@@ -4,7 +4,7 @@ export default async function Business({ params }: { params: { id: string } }) {
   let data = await fetch(`https://api.yelp.com/v3/businesses/${params.id}`, {
     method: "GET",
     headers: {
-      Authorization: `Bearer ${process.env.API_KEY}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_KEY}`,
       accept: "application/json",
     },
   });
